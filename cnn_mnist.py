@@ -172,7 +172,7 @@ print("Final results:")
 print("  test loss:\t\t\t{:.6f}".format(test_err / test_batches))
 print("  test accuracy:\t\t{:.2f} %".format(
     test_acc / test_batches * 100))
-
+ 
 plt.plot(range(num_epochs),tr_loss,label='Training Loss')
 plt.plot(range(num_epochs),val_loss,label='Validation Loss')
 # plt.axis('off')
