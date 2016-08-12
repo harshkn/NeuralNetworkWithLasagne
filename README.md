@@ -20,7 +20,8 @@ Hidden Layer size: 784 x 625 with 50% drop-out with ReLU activation
 Output Layer: 625 x 10 with 50% drop-out with softmax activation  
 
 ####Without using mini-batch: epoch - 500, test accuracy 93%
-Tried to train a simple 2 layer network with no minibatch. Got around 93% test accuracy after 500 epochs. The training and validation loss is shown below  
+Tried to train a simple 2 layer network with no minibatch. Got around 93% test accuracy after 500 epochs. The training and validation loss is shown below      
+ 
  
 <img src="loss_no_mb.png" alt="alt text" width="350" height="250">
 
