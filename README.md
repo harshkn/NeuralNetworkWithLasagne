@@ -14,6 +14,8 @@ Tried to train a simple 2 layer network with no minibatch. Got around 93% test a
 ######Training loss and Validation loss without using mini-batch
 
 ![Training loss Vs Validation loss](loss_no_mb.png)
+<img src="loss_no_mb.png" alt="alt text" width="40" height="50">
+
 
 ####With using mini-batch: epoch - 150, test accuracy 98.15%
 With using mini-batch the learning is faster.
