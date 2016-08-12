@@ -1,6 +1,9 @@
 # TwoLayerNNWithLasagne
 Simple two layer neural network with Theano and Lasagne to do handwritten digit recognition.
 
+####Sample Digits
+![Sample digits](digits.png)
+
 ####Model 
 Input Layer size: 784 with 20% drop-out and ReLU activation   
 Hidden Layer size: 784 x 625 with 50% drop-out with ReLU activation  
