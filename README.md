@@ -13,8 +13,8 @@ Output Layer: 625 x 10 with 50% drop-out with softmax activation
 Tried to train a simple 2 layer network with no minibatch. Got around 93% test accuracy after 500 epochs. 
 ######Training loss and Validation loss without using mini-batch
 
-![Training loss Vs Validation loss](loss_no_mb.png)
-<img src="loss_no_mb.png" alt="alt text" width="40" height="50">
+![Training loss Vs Validation loss](loss_no_mb.png)  
+<img src="loss_no_mb.png" alt="alt text" width="100" height="80">
 
 
 ####With using mini-batch: epoch - 150, test accuracy 98.15%
