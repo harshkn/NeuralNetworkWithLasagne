@@ -5,9 +5,9 @@
 ##Convolutional Neural Network model
 Input Layer: 28 x 28  
 ConvLayer 1: 32 x 5 x 5  
-ConvLayer 2: 32 x 5 x 5
-DenseLayer 1: 256 
-DenseLayer 2: 256 * 10
+ConvLayer 2: 32 x 5 x 5  
+DenseLayer 1: 256   
+DenseLayer 2: 256 * 10  
 
 ####Using mini-batch: epoch - 30, test accuracy 99.15%
 Each epoch took around 60-90 seconds. The training and validation loss is shown below
