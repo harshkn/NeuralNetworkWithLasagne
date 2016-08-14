@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Neuralnetworkwithlasagne by harshkn</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Neuralnetworkwithlasagne</h1>
+        <p>CNN and two layer NN comparision with Theano and Lasagne to do handwritten digit recognition.</p>
+
+        <p class="view"><a href="https://github.com/harshkn/NeuralNetworkWithLasagne">View the Project on GitHub <small>harshkn/NeuralNetworkWithLasagne</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/harshkn/NeuralNetworkWithLasagne/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/harshkn/NeuralNetworkWithLasagne/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/harshkn/NeuralNetworkWithLasagne">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="neural-network-with-theono-and-lasagne-on-mnist-data" class="anchor" href="#neural-network-with-theono-and-lasagne-on-mnist-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Neural Network with Theono and Lasagne on MNIST data</h1>
+
+<h4>
+<a id="sample-digits" class="anchor" href="#sample-digits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sample Digits</h4>
+
+<p><img src="digits.png" alt="Sample digits"></p>
+
+<h2>
+<a id="convolutional-neural-network-model" class="anchor" href="#convolutional-neural-network-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Convolutional Neural Network model</h2>
+
+<p>Input Layer: 28 x 28<br>
+ConvLayer 1: 32 x 5 x 5<br>
+ConvLayer 2: 32 x 5 x 5<br>
+DenseLayer 1: 256<br>
+DenseLayer 2: 256 * 10  </p>
+
+<h4>
+<a id="using-mini-batch-epoch---30-test-accuracy-9915" class="anchor" href="#using-mini-batch-epoch---30-test-accuracy-9915" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using mini-batch: epoch - 30, test accuracy 99.15%</h4>
+
+<p>Each epoch took around 60-90 seconds. The training and validation loss is shown below
+<img src="loss_cnn.png" alt="alt text" width="350" height="250"></p>
+
+<h2>
+<a id="2-layer-neural-network-model" class="anchor" href="#2-layer-neural-network-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2 Layer Neural Network Model</h2>
+
+<p>Input Layer size: 784 with 20% drop-out and ReLU activation<br>
+Hidden Layer size: 784 x 625 with 50% drop-out with ReLU activation<br>
+Output Layer: 625 x 10 with 50% drop-out with softmax activation  </p>
+
+<h4>
+<a id="without-using-mini-batch-epoch---500-test-accuracy-93" class="anchor" href="#without-using-mini-batch-epoch---500-test-accuracy-93" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Without using mini-batch: epoch - 500, test accuracy 93%</h4>
+
+<p>Tried to train a simple 2 layer network with no minibatch. Got around 93% test accuracy after 500 epochs. The training and validation loss is shown below      </p>
+
+<p><img src="loss_no_mb.png" alt="alt text" width="350" height="250"></p>
+
+<h4>
+<a id="using-mini-batch-epoch---150-test-accuracy-9815" class="anchor" href="#using-mini-batch-epoch---150-test-accuracy-9815" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using mini-batch: epoch - 150, test accuracy 98.15%</h4>
+
+<p>Using mini-batch the learning is faster. Each epoch took around 6 seconds. The training and validation loss is shown below</p>
+
+<p><img src="loss_mb.png" alt="alt text" width="350" height="250"></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/harshkn">harshkn</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
